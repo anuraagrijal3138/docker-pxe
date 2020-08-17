@@ -18,10 +18,16 @@ to reflect install device and ignition config file.
 
 3. Change etc/dnsmasq.conf 
 
+```
 interface=enp3s0.20
+```
+
 To reflect the interface to provide DHCP and pxefile.
 
+```
 dhcp-option=3,172.18.0.1
+```
+
 To reflect gateway for the hosts.
 
 
