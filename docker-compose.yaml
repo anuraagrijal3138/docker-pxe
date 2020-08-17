@@ -1,0 +1,12 @@
+---
+version: "2.1"
+services:
+  pxe_service:
+    build: 
+      context: ./
+    container_name: pxe
+    privileged: true
+    volumes:
+      - ./pxelinux.cfg:/var/lib/tftpboot/pxelinux.cfg:ro
+    network_mode: host
+    restart: unless-stopped
