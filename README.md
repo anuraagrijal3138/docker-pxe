@@ -1,6 +1,12 @@
 Changes as per use-case:
 
-1. Change Dockerfile last line CMD ["--dhcp-range=172.18.0.50,172.18.0.99,255.255.255.0,24h"] to the network you want to provide DHCP for.
+1. Change Dockerfile last line 
+
+```
+CMD ["--dhcp-range=172.18.0.50,172.18.0.99,255.255.255.0,24h"] 
+```
+
+to the network you want to provide DHCP for.
 
 2. Change pxelinux.cfg/default
 
