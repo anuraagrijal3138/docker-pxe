@@ -4,6 +4,7 @@ Changes as per use-case:
 
 2. Change pxelinux.cfg/default
 
+```
 TIMEOUT 20
 PROMPT 1
 DEFAULT pxeboot
@@ -11,6 +12,7 @@ LABEL pxeboot
     KERNEL /coreos/coreos-live-kernel
     APPEND ip=dhcp rd.neednet=1 initrd=/coreos/coreos-live-initramfs.img console=tty0 console=ttyS0 coreos.inst.install_dev=/dev/sda coreos.inst.ignition_url=http://172.18.0.1:8000/config.ign
 IPAPPEND 2
+```
 
 to reflect install device and ignition config file.
 
